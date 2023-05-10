@@ -1,0 +1,3334 @@
+{
+	id: "08DF8E49DAFD4F9D"
+	group: "0810E42B2DD79973"
+	order_index: 2
+	filename: "shipments"
+	title: "&a Shipments"
+	icon: "thermal:machine_press"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "thermal:machine_press"
+			x: 0.0d
+			y: 12.25d
+			shape: "hexagon"
+			description: [
+				"&6Shipments&r are the Automated way to exchange coin for resources. Here you can buy Import Cards for use in the Trading Machine."
+				""
+				"Each import card comes with a cost up front. Once that is paid you can limitlessly buy the respective goods priced at what's stated in the subtitle."
+			]
+			size: 2.0d
+			id: "6AC1CED0D341150E"
+			tasks: [{
+				id: "214F623C75A92809"
+				type: "checkmark"
+				title: "Shipments"
+			}]
+		}
+		{
+			title: "Automatic Exchange"
+			icon: "thermal:gold_coin"
+			x: 2.0d
+			y: 12.25d
+			shape: "circle"
+			subtitle: "Silver <> Gold"
+			description: ["This Trading card can convert the currency of coins inserted into the Trading Machine."]
+			dependencies: ["6AC1CED0D341150E"]
+			id: "3B548F2C060C2229"
+			tasks: [{
+				id: "601161A1565C5161"
+				type: "item"
+				item: "thermal:silver_coin"
+			}]
+			rewards: [
+				{
+					id: "0A6DEF2E19943F9F"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_exchange_currencies"
+				}
+			]
+		}
+		{
+			title: "16x Dirt"
+			icon: "minecraft:dirt"
+			disable_toast: true
+			x: -3.5d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "2 Silver"
+			can_repeat: true
+			id: "1A27F6CC5196D116"
+			tasks: [{
+				id: "4A756F231245382C"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [{
+				id: "73B5632934CB5398"
+				type: "item"
+				auto: "enabled"
+				item: "kubejs:trade_card_dirt"
+			}]
+		}
+		{
+			title: "16x Sand"
+			icon: "minecraft:sand"
+			disable_toast: true
+			x: -2.5d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "4C0F811C1D2495CC"
+			tasks: [{
+				id: "7903FA0C29DC6F93"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [{
+				id: "4D3AAC1C8DC9CEEF"
+				type: "item"
+				auto: "enabled"
+				item: "kubejs:trade_card_sand"
+			}]
+		}
+		{
+			title: "16x Gravel"
+			icon: "minecraft:gravel"
+			disable_toast: true
+			x: -1.5d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "2 Silver"
+			can_repeat: true
+			id: "6AE7090EB52A51B3"
+			tasks: [{
+				id: "448F36640D57DAC1"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [{
+				id: "092706A1932A2BC2"
+				type: "item"
+				auto: "enabled"
+				item: "kubejs:trade_card_gravel"
+			}]
+		}
+		{
+			title: "16x Clay"
+			icon: "minecraft:clay"
+			disable_toast: true
+			x: -0.5d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "6 Silver"
+			can_repeat: true
+			id: "0315668E30F2F6E5"
+			tasks: [{
+				id: "20D919F64F7AFFEA"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [{
+				id: "5DC9D20E6BC4A51C"
+				type: "item"
+				auto: "enabled"
+				item: "kubejs:trade_card_clay"
+			}]
+		}
+		{
+			title: "16x Ice"
+			icon: "minecraft:ice"
+			disable_toast: true
+			x: 0.5d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			can_repeat: true
+			id: "36B5C3ECFD38670E"
+			tasks: [{
+				id: "59D815E73906936E"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "5626AD1C3B237DBF"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_ice"
+				}
+			]
+		}
+		{
+			title: "16x Blackstone"
+			icon: "minecraft:blackstone"
+			disable_toast: true
+			x: 1.5d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "12 Silver"
+			can_repeat: true
+			id: "1509D36A982217C6"
+			tasks: [{
+				id: "54CF59C637986EA6"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "5A7B73A55C927126"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_blackstone"
+				}
+			]
+		}
+		{
+			title: "16x Grout"
+			icon: "tconstruct:grout"
+			disable_toast: true
+			x: 2.5d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "12 Silver"
+			can_repeat: true
+			id: "1BA3EF0818CA7F64"
+			tasks: [{
+				id: "7B7EAEB5685FF91B"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "0D2D48CDD087D4FA"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_grout"
+				}
+			]
+		}
+		{
+			title: "16x Cobblestone"
+			icon: "minecraft:cobblestone"
+			disable_toast: true
+			x: 3.5d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "1 Silver"
+			can_repeat: true
+			id: "0DEFAE2746209F1A"
+			tasks: [{
+				id: "785F1754B3EF8BF5"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "268F87140B2BE1A5"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_cobblestone"
+				}
+			]
+		}
+		{
+			title: "16x Granite"
+			icon: "minecraft:granite"
+			disable_toast: true
+			x: -3.5d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "3 Silver"
+			can_repeat: true
+			id: "2C10D18D55335B7E"
+			tasks: [{
+				id: "0E5FAE10E27E9366"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2E3F385127229261"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_granite"
+				}
+			]
+		}
+		{
+			title: "16x Diorite"
+			icon: "minecraft:diorite"
+			disable_toast: true
+			x: -2.5d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "3 Silver"
+			can_repeat: true
+			id: "5F0B4CBE299954C4"
+			tasks: [{
+				id: "1FABFC7817D97D70"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "17357E149CEB22EB"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_diorite"
+				}
+			]
+		}
+		{
+			title: "16x Andesite"
+			icon: "minecraft:andesite"
+			disable_toast: true
+			x: -1.5d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "3 Silver"
+			can_repeat: true
+			id: "262F369CE9CA7C87"
+			tasks: [{
+				id: "627C690F2F1F4141"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "57557C8A54D21B68"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_andesite"
+				}
+			]
+		}
+		{
+			title: "16x Limestone"
+			icon: "create:limestone"
+			disable_toast: true
+			x: -0.5d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "3 Silver"
+			can_repeat: true
+			id: "47FB0491BAB19B90"
+			tasks: [{
+				id: "3562F12F71399D43"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "798D923EE57A6442"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_limestone"
+				}
+			]
+		}
+		{
+			title: "16x Calcite"
+			icon: "minecraft:calcite"
+			disable_toast: true
+			x: 0.5d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			can_repeat: true
+			id: "3DDAE38C0982006F"
+			tasks: [{
+				id: "6F23A5303082EA48"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "5D564E6651601870"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_calcite"
+				}
+			]
+		}
+		{
+			title: "16x Stone"
+			icon: "minecraft:stone"
+			disable_toast: true
+			x: 1.5d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "3 Silver"
+			can_repeat: true
+			id: "7004EC32689972BD"
+			tasks: [{
+				id: "0D04DAEF7A7BA4CE"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "245A6F167A95C24A"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_stone"
+				}
+			]
+		}
+		{
+			title: "16x Moss Block"
+			icon: "minecraft:moss_block"
+			disable_toast: true
+			x: 2.5d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "3 Silver"
+			can_repeat: true
+			id: "650421069ADD5DF4"
+			tasks: [{
+				id: "2E5008B38BA20119"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "58A1D35232DCE4F3"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_moss_block"
+				}
+			]
+		}
+		{
+			title: "16x Scoria"
+			icon: "create:scoria"
+			disable_toast: true
+			x: 3.5d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "3 Silver"
+			can_repeat: true
+			id: "41709386017FD959"
+			tasks: [{
+				id: "6FCDF761279D7BD7"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "16054B2D679D6012"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_scoria"
+				}
+			]
+		}
+		{
+			title: "1x Amethyst"
+			icon: "minecraft:amethyst_block"
+			disable_toast: true
+			x: -3.5d
+			y: 2.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "043B5A961669A792"
+			tasks: [{
+				id: "74C8125C04D8A0F1"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "6FBADA6B12BD4415"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_amethyst"
+				}
+			]
+		}
+		{
+			title: "1x Obsidian"
+			icon: "minecraft:obsidian"
+			disable_toast: true
+			x: -2.5d
+			y: 2.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "5D4F2FFCBD0B0F8E"
+			tasks: [{
+				id: "09762E98E4ADFA54"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "6EC8FA21CEFFBB20"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_obsidian"
+				}
+			]
+		}
+		{
+			title: "16x Dead Log"
+			icon: "biomesoplenty:dead_log"
+			disable_toast: true
+			x: -3.5d
+			y: 3.5d
+			shape: "hexagon"
+			subtitle: "2 Silver"
+			can_repeat: true
+			id: "222EEB7DB1D98484"
+			tasks: [{
+				id: "4F6FBE56F7CDEFF4"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "203B1118E5E16C63"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_dead_log"
+				}
+			]
+		}
+		{
+			title: "16x Oak Log"
+			icon: "minecraft:oak_log"
+			disable_toast: true
+			x: -2.5d
+			y: 3.5d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "5504C6597C74637B"
+			tasks: [{
+				id: "33745C01EBE18522"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "41B4166C32732193"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_oak_log"
+				}
+			]
+		}
+		{
+			title: "16x Birch Log"
+			icon: "minecraft:birch_log"
+			disable_toast: true
+			x: -1.5d
+			y: 3.5d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "35F97137A46C1F3C"
+			tasks: [{
+				id: "4D91654331E04989"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "153D65A8A0BB38FA"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_birch_log"
+				}
+			]
+		}
+		{
+			title: "16x Spruce Log"
+			icon: "minecraft:spruce_log"
+			disable_toast: true
+			x: -0.5d
+			y: 3.5d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "5923347D1827DA83"
+			tasks: [{
+				id: "0C089819C11CA13F"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "795C72A7059A47C2"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_spruce_log"
+				}
+			]
+		}
+		{
+			title: "16x Jungle Log"
+			icon: "minecraft:jungle_log"
+			disable_toast: true
+			x: 0.5d
+			y: 3.5d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "7F7ACF3B774E9D0E"
+			tasks: [{
+				id: "47A66BF894211981"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "7A2F2E7AFBF5E2C0"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_jungle_log"
+				}
+			]
+		}
+		{
+			title: "16x Acacia Log"
+			icon: "minecraft:acacia_log"
+			disable_toast: true
+			x: 1.5d
+			y: 3.5d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "6C6A43E08FBC8D53"
+			tasks: [{
+				id: "69933C609CBB5098"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "32FB1ED239878B55"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_acacia_log"
+				}
+			]
+		}
+		{
+			title: "16x Dark Oak Log"
+			icon: "minecraft:dark_oak_log"
+			disable_toast: true
+			x: 2.5d
+			y: 3.5d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "585788A4494AC124"
+			tasks: [{
+				id: "0720A203C27A544B"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "1854BD659ABE0EC5"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_dark_oak_log"
+				}
+			]
+		}
+		{
+			title: "16x Crimson Stem"
+			icon: "minecraft:crimson_stem"
+			disable_toast: true
+			x: 3.5d
+			y: 3.5d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "24328C973480E4E8"
+			tasks: [{
+				id: "69B204994581EA5A"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "4DDDA8FE8957E1B3"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_crimson_stem"
+				}
+			]
+		}
+		{
+			title: "16x Warped Stem"
+			icon: "minecraft:warped_stem"
+			disable_toast: true
+			x: -3.5d
+			y: 4.5d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "725FFE8BD6E45F96"
+			tasks: [{
+				id: "6F0F7C5617BD6320"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2EFE654C949DA5E2"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_warped_stem"
+				}
+			]
+		}
+		{
+			title: "8x Iron Ingot"
+			icon: "minecraft:iron_ingot"
+			disable_toast: true
+			x: -3.5d
+			y: 6.0d
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			can_repeat: true
+			id: "07081911727142C8"
+			tasks: [{
+				id: "405D1EC31C5CEAF2"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "04EFE1B1037D4425"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_iron_ingot"
+				}
+			]
+		}
+		{
+			title: "8x Zinc Ingot"
+			icon: "create:zinc_ingot"
+			disable_toast: true
+			x: -2.5d
+			y: 6.0d
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			can_repeat: true
+			id: "69B107895D3CA0B2"
+			tasks: [{
+				id: "2C8F6A20A2DCAA10"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "5D700D1565692EE1"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_zinc_ingot"
+				}
+			]
+		}
+		{
+			title: "8x Copper Ingot"
+			icon: "minecraft:copper_ingot"
+			disable_toast: true
+			x: -1.5d
+			y: 6.0d
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			can_repeat: true
+			id: "74F96A8D400FD059"
+			tasks: [{
+				id: "48683B20D7B4C40D"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "5FDA4963F53EC5F5"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_copper_ingot"
+				}
+			]
+		}
+		{
+			title: "8x Nickel Ingot"
+			icon: "thermal:nickel_ingot"
+			disable_toast: true
+			x: -0.5d
+			y: 6.0d
+			shape: "hexagon"
+			subtitle: "32 Silver"
+			can_repeat: true
+			id: "6D8E4C9DCFFB2C90"
+			tasks: [{
+				id: "2C1CD73C4F9A126E"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "645226D860AF3F5E"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_nickel_ingot"
+				}
+			]
+		}
+		{
+			title: "8x Lead Ingot"
+			icon: "thermal:lead_ingot"
+			disable_toast: true
+			x: 0.5d
+			y: 6.0d
+			shape: "hexagon"
+			subtitle: "32 Silver"
+			can_repeat: true
+			id: "3FC1029AF9BB245E"
+			tasks: [{
+				id: "76679C31FB55AC99"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "5FB6D6D6595BFA31"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_lead_ingot"
+				}
+			]
+		}
+		{
+			title: "8x Gold Ingot"
+			icon: "minecraft:gold_ingot"
+			disable_toast: true
+			x: 1.5d
+			y: 6.0d
+			shape: "hexagon"
+			subtitle: "48 Silver"
+			can_repeat: true
+			id: "417DD17A5C96CEE2"
+			tasks: [{
+				id: "21048ECCF870510E"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "5DF7A47F2DF28050"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_gold_ingot"
+				}
+			]
+		}
+		{
+			title: "16x Andesite Alloy"
+			icon: "create:andesite_alloy"
+			disable_toast: true
+			x: 2.5d
+			y: 6.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "7B5B7BB304E14C6D"
+			tasks: [{
+				id: "7106D948A6148F3F"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "086F1AC96402FBDE"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_andesite_alloy"
+				}
+			]
+		}
+		{
+			title: "8x Silica Steel"
+			icon: "moreminecarts:silica_steel"
+			disable_toast: true
+			x: 3.5d
+			y: 6.0d
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			can_repeat: true
+			id: "01F3EDC327B63908"
+			tasks: [{
+				id: "59D460B0062FCD02"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "7FDA0A2FE7C3CC29"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_silica_steel"
+				}
+			]
+		}
+		{
+			title: "8x Brass Ingot"
+			icon: "create:brass_ingot"
+			disable_toast: true
+			x: -3.5d
+			y: 7.0d
+			shape: "hexagon"
+			subtitle: "48 Silver"
+			can_repeat: true
+			id: "040A0552921E1115"
+			tasks: [{
+				id: "3E8E8E4CD2EEBE0D"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "5BBBE855F52ED029"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_brass_ingot"
+				}
+			]
+		}
+		{
+			title: "4x Invar Ingot"
+			icon: "thermal:invar_ingot"
+			disable_toast: true
+			x: -2.5d
+			y: 7.0d
+			shape: "hexagon"
+			subtitle: "64 Silver"
+			can_repeat: true
+			id: "2D022872F99F9907"
+			tasks: [{
+				id: "3F49C93B2F9C8BC2"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "302C6F91CA94F1E1"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_invar_ingot"
+				}
+			]
+		}
+		{
+			title: "16x Coal"
+			icon: "minecraft:coal"
+			disable_toast: true
+			x: -1.5d
+			y: 7.0d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "0DA48CA15E17157D"
+			tasks: [{
+				id: "7813299A6F0A7923"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2EBABA88E1067F51"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_coal"
+				}
+			]
+		}
+		{
+			title: "16x Flint"
+			icon: "minecraft:flint"
+			disable_toast: true
+			x: -0.5d
+			y: 7.0d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "70FDB8C2F2C4A825"
+			tasks: [{
+				id: "48D1CF5666B6688C"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "3E183FFAFED2D1D9"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_flint"
+				}
+			]
+		}
+		{
+			title: "4x Cinnabar"
+			icon: "thermal:cinnabar"
+			disable_toast: true
+			x: 0.5d
+			y: 7.0d
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			can_repeat: true
+			id: "78ECB6EB48347D08"
+			tasks: [{
+				id: "123B7FAF8F6E5495"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "48E779E7241F8B64"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_cinnabar"
+				}
+			]
+		}
+		{
+			title: "16x Redstone Dust"
+			icon: "minecraft:redstone"
+			disable_toast: true
+			x: 1.5d
+			y: 7.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "21CC162C06BBFAE6"
+			tasks: [{
+				id: "03EC6C3F9F8DE5E8"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "288A91044CFC9BEA"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_redstone_dust"
+				}
+			]
+		}
+		{
+			title: "1x Diamond"
+			icon: "minecraft:diamond"
+			disable_toast: true
+			x: 2.5d
+			y: 7.0d
+			shape: "hexagon"
+			subtitle: "1 Gold"
+			can_repeat: true
+			id: "00EBF8DED4E51A4F"
+			tasks: [{
+				id: "629882CBD08A0F37"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "703407B7CF1C8911"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_diamond"
+				}
+			]
+		}
+		{
+			title: "8x Lapis Lazuli"
+			icon: "minecraft:lapis_lazuli"
+			disable_toast: true
+			x: 3.5d
+			y: 7.0d
+			shape: "hexagon"
+			subtitle: "32 Silver"
+			can_repeat: true
+			id: "258C779897D1AEF0"
+			tasks: [{
+				id: "3E5A44DCA6B75DA4"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "0351079CD0288700"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_lapis_lazuli"
+				}
+			]
+		}
+		{
+			title: "1x Emerald"
+			icon: "minecraft:emerald"
+			disable_toast: true
+			x: -3.5d
+			y: 8.0d
+			shape: "hexagon"
+			subtitle: "1 Gold"
+			can_repeat: true
+			id: "38CD5CE18FE09D23"
+			tasks: [{
+				id: "5697CD109E293D66"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "14762B422E1D7D3B"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_emerald"
+				}
+			]
+		}
+		{
+			title: "4x Sulfur"
+			icon: "thermal:sulfur"
+			disable_toast: true
+			x: -2.5d
+			y: 8.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "1C104893F5481A58"
+			tasks: [{
+				id: "32BD07B4D88AC933"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "1F521871F7BF5D3B"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_sulfur"
+				}
+			]
+		}
+		{
+			title: "4x Apatite"
+			icon: "thermal:apatite"
+			disable_toast: true
+			x: -1.5d
+			y: 8.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "7509D8FA29C6AB31"
+			tasks: [{
+				id: "51F48DD6F9E31312"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2FC89C2C89DA4253"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_apatite"
+				}
+			]
+		}
+		{
+			title: "4x Niter"
+			icon: "thermal:niter"
+			disable_toast: true
+			x: -0.5d
+			y: 8.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "3A4A3B749FBDBEF1"
+			tasks: [{
+				id: "6617D0134BAA4A51"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2064E44195ACEC5B"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_niter"
+				}
+			]
+		}
+		{
+			title: "8x Nether Quartz"
+			icon: "minecraft:quartz"
+			disable_toast: true
+			x: 0.5d
+			y: 8.0d
+			shape: "hexagon"
+			subtitle: "24 Silver"
+			can_repeat: true
+			id: "1D6150F2480B976E"
+			tasks: [{
+				id: "377180FD5A34A04E"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "13C6D81EC3938304"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_nether_quartz"
+				}
+			]
+		}
+		{
+			title: "8x Certus Quartz"
+			icon: "ae2:certus_quartz_crystal"
+			disable_toast: true
+			x: 1.5d
+			y: 8.0d
+			shape: "hexagon"
+			subtitle: "24 Silver"
+			can_repeat: true
+			id: "48F72CFAB336FE73"
+			tasks: [{
+				id: "7EC3509B8D1B3428"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "4DE00DE8BF5936C9"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_certus_quartz"
+				}
+			]
+		}
+		{
+			title: "8x Fluix Quartz"
+			icon: "ae2:fluix_crystal"
+			disable_toast: true
+			x: 2.5d
+			y: 8.0d
+			shape: "hexagon"
+			subtitle: "32 Silver"
+			can_repeat: true
+			id: "4A678C0BE97177DB"
+			tasks: [{
+				id: "7ADB304DD8E20DB3"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "08DDDFEFD8A7C4D7"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_fluix_quartz"
+				}
+			]
+		}
+		{
+			title: "6x Cured Rubber"
+			icon: "thermal:cured_rubber"
+			disable_toast: true
+			x: 3.5d
+			y: 8.0d
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			can_repeat: true
+			id: "488A4B4A3295CF10"
+			tasks: [{
+				id: "78A09B6FA88E17EB"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "22DD9D3AF87567E2"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_cured_rubber"
+				}
+			]
+		}
+		{
+			title: "16x Scaffolding"
+			icon: "minecraft:scaffolding"
+			disable_toast: true
+			x: -1.5d
+			y: 9.5d
+			shape: "hexagon"
+			subtitle: "2 Silver"
+			can_repeat: true
+			id: "49634E835B948A4F"
+			tasks: [{
+				id: "5688E91CACD4D08A"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "4E2898367E1E0619"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_scaffolding"
+				}
+			]
+		}
+		{
+			title: "1x Wool"
+			icon: "minecraft:white_wool"
+			disable_toast: true
+			x: -0.5d
+			y: 9.5d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "20CB646041616191"
+			tasks: [{
+				id: "1FFA77921DE9C672"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "36A65ACB4695944E"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_wool"
+				}
+
+			]
+		}
+		{
+			title: "1x Sponge"
+			icon: "minecraft:sponge"
+			disable_toast: true
+			x: 0.5d
+			y: 9.5d
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			can_repeat: true
+			id: "58E93229D6552D4B"
+			tasks: [{
+				id: "51E4A954A6C1C680"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "53B0394912B56DD3"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_sponge"
+				}
+			]
+		}
+		{
+			title: "1x Cobweb"
+			icon: "minecraft:cobweb"
+			disable_toast: true
+			x: 1.5d
+			y: 9.5d
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			can_repeat: true
+			id: "3C45250D863E65CB"
+			tasks: [{
+				id: "7379A534933BBFC4"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "4CD2BDCF1A0AF73B"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_cobweb"
+				}
+			]
+		}
+		{
+			title: "1x Rice"
+			icon: "farmersdelight:rice_bag"
+			disable_toast: true
+			x: -3.5d
+			y: 15.0d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "7BDF86B9E3E607C5"
+			tasks: [{
+				id: "77D789870156E17E"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "3A5740C10BBF0430"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_rice"
+				}
+			]
+		}
+		{
+			title: "32x Straw"
+			icon: "farmersdelight:straw"
+			disable_toast: true
+			x: -2.5d
+			y: 15.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "59EBD3DADD002D3A"
+			tasks: [{
+				id: "6E8F252330F9E3FF"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "78B01F12E7EDFC53"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_straw"
+				}
+			]
+		}
+		{
+			title: "4x Glowshroom"
+			icon: "biomesoplenty:glowshroom"
+			disable_toast: true
+			x: -1.5d
+			y: 15.0d
+			shape: "hexagon"
+			subtitle: "9 Silver"
+			can_repeat: true
+			id: "7F4D9F958EBDEAF8"
+			tasks: [{
+				id: "04CB57B93A9A5543"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "6056A6105CB0C763"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_glowshroom"
+				}
+			]
+		}
+		{
+			title: "4x Bramble"
+			icon: "biomesoplenty:bramble"
+			disable_toast: true
+			x: -0.5d
+			y: 15.0d
+			shape: "hexagon"
+			subtitle: "9 Silver"
+			can_repeat: true
+			id: "737E670DC8AD5E19"
+			tasks: [{
+				id: "03282EA97256DD8E"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "7B54EAB8073173F1"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_bramble"
+				}
+			]
+		}
+		{
+			title: "4x Barley"
+			icon: "biomesoplenty:barley"
+			disable_toast: true
+			x: 0.5d
+			y: 15.0d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "1EF5AB1D7882167F"
+			tasks: [{
+				id: "74F041E80576D161"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "3EE0DCF1E01DE583"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_barley"
+				}
+			]
+		}
+		{
+			title: "4x Watergrass"
+			icon: "biomesoplenty:watergrass"
+			disable_toast: true
+			x: 1.5d
+			y: 15.0d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "576E0B50F2015C9E"
+			tasks: [{
+				id: "13F5F8B129D56A11"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "05836F075B2DD93C"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_watergrass"
+				}
+			]
+		}
+		{
+			title: "4x Mangrove Root"
+			icon: "wildbackport:mangrove_roots"
+			disable_toast: true
+			x: 2.5d
+			y: 15.0d
+			shape: "hexagon"
+			subtitle: "9 Silver"
+			can_repeat: true
+			id: "2C01297688930D47"
+			tasks: [{
+				id: "2869F3D5537E102D"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2A462F9CABD9AC8F"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_mangrove_root"
+				}
+			]
+		}
+		{
+			title: "4x Reed"
+			icon: "biomesoplenty:reed"
+			disable_toast: true
+			x: 3.5d
+			y: 15.0d
+			shape: "hexagon"
+			subtitle: "5 Silver"
+			can_repeat: true
+			id: "3CA6DD7C5516A330"
+			tasks: [{
+				id: "4C36A02FD8FFB372"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "5DF1491360FCF3FA"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_reed"
+				}
+			]
+		}
+		{
+			title: "4x Clover Petal"
+			icon: "biomesoplenty:huge_clover_petal"
+			disable_toast: true
+			x: -3.5d
+			y: 16.0d
+			shape: "hexagon"
+			subtitle: "10 Silver"
+			can_repeat: true
+			id: "6C6C1C2E7CA882BD"
+			tasks: [{
+				id: "422A86FE2BC106B8"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "07C4BD06D929D08A"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_clover_petal"
+				}
+			]
+		}
+		{
+			title: "4x Spanish Moss"
+			icon: "biomesoplenty:spanish_moss"
+			disable_toast: true
+			x: -2.5d
+			y: 16.0d
+			shape: "hexagon"
+			subtitle: "7 Silver"
+			can_repeat: true
+			id: "3E27961386364EDF"
+			tasks: [{
+				id: "4BB831132F4F2E5D"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "1D32702F20FE8AAB"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_spanish_moss"
+				}
+			]
+		}
+		{
+			title: "4x Willow Vine"
+			icon: "biomesoplenty:willow_vine"
+			disable_toast: true
+			x: -1.5d
+			y: 16.0d
+			shape: "hexagon"
+			subtitle: "7 Silver"
+			can_repeat: true
+			id: "286C553AD3E15266"
+			tasks: [{
+				id: "4C968D5E57EBEB29"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "0A9B1BF968F82301"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_willow_vine"
+				}
+			]
+		}
+		{
+			title: "4x Cattail"
+			icon: "biomesoplenty:cattail"
+			disable_toast: true
+			x: -0.5d
+			y: 16.0d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "70B164A5F22452CA"
+			tasks: [{
+				id: "3BEC13679ADA8951"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "1BD8FA059ED750C8"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_cattail"
+				}
+			]
+		}
+		{
+			title: "4x Sugar Cane"
+			icon: "minecraft:sugar_cane"
+			disable_toast: true
+			x: 0.5d
+			y: 16.0d
+			shape: "hexagon"
+			subtitle: "3 Silver"
+			can_repeat: true
+			id: "5BB058D52AA40751"
+			tasks: [{
+				id: "2D4984407440CAE5"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "3D70673520E3563B"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_sugar_cane"
+				}
+			]
+		}
+		{
+			title: "8x Kelp"
+			icon: "minecraft:kelp"
+			disable_toast: true
+			x: 1.5d
+			y: 16.0d
+			shape: "hexagon"
+			subtitle: "3 Silver"
+			can_repeat: true
+			id: "4C068341DD17068B"
+			tasks: [{
+				id: "6A9A583F2DAABF7A"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "51D175FD782BBBB1"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_kelp"
+				}
+			]
+		}
+		{
+			title: "8x Bamboo"
+			icon: "minecraft:bamboo"
+			disable_toast: true
+			x: 2.5d
+			y: 16.0d
+			shape: "hexagon"
+			subtitle: "5 Silver"
+			can_repeat: true
+			id: "3A86EA1C2AD21C29"
+			tasks: [{
+				id: "62575AE95965D328"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "1C92DCE87F116947"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_bamboo"
+				}
+			]
+		}
+		{
+			title: "8x Sweet Berries"
+			icon: "minecraft:sweet_berries"
+			disable_toast: true
+			x: 3.5d
+			y: 16.0d
+			shape: "hexagon"
+			subtitle: "11 Silver"
+			can_repeat: true
+			id: "33B5C951B4AE8322"
+			tasks: [{
+				id: "3EED905996C2FA91"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "68F58624A48FD804"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_sweet_berries"
+				}
+			]
+		}
+		{
+			title: "4x Vines"
+			icon: "minecraft:vine"
+			disable_toast: true
+			x: -3.5d
+			y: 17.0d
+			shape: "hexagon"
+			subtitle: "7 Silver"
+			can_repeat: true
+			id: "57CD030DE2CD7715"
+			tasks: [{
+				id: "7BD6E0DA086B43DF"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "10F61F3602889BF0"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_vines"
+				}
+			]
+		}
+		{
+			title: "1x Tree Fertilizer"
+			icon: "create:tree_fertilizer"
+			disable_toast: true
+			x: -2.5d
+			y: 17.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "0726837174BCED3D"
+			tasks: [{
+				id: "12FAABD2933127FF"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "24A86054AF92BE82"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_tree_fertilizer"
+				}
+			]
+		}
+		{
+			title: "16x Daub"
+			icon: "supplementaries:daub"
+			disable_toast: true
+			x: -3.5d
+			y: 18.5d
+			shape: "hexagon"
+			subtitle: "5 Silver"
+			can_repeat: true
+			id: "091671443430B31B"
+			tasks: [{
+				id: "5C5A382C41AACDCA"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "16A5440919178342"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_daub"
+				}
+			]
+		}
+		{
+			title: "16x Clear Glass"
+			icon: "tconstruct:clear_glass"
+			disable_toast: true
+			x: -2.5d
+			y: 18.5d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "7DFB9DD1A1BB63E4"
+			tasks: [{
+				id: "47933CF1CF318964"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2944EA4C610DACB4"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_clear_glass"
+				}
+			]
+		}
+		{
+			title: "16x Laboratory Block"
+			icon: "auxiliaryblocks:lab_chrome"
+			disable_toast: true
+			x: -1.5d
+			y: 18.5d
+			shape: "hexagon"
+			subtitle: "2 Silver"
+			can_repeat: true
+			id: "480F70ECCC09621E"
+			tasks: [{
+				id: "21E5B3D779BB589C"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "74D39B3EBA32AD01"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_laboratory_block"
+				}
+			]
+		}
+		{
+			title: "16x Hazard Block"
+			icon: "architects_palette:hazard_block"
+			disable_toast: true
+			x: -0.5d
+			y: 18.5d
+			shape: "hexagon"
+			subtitle: "4 Silver"
+			can_repeat: true
+			id: "1ACB59D7A20671CE"
+			tasks: [{
+				id: "4C6466D4DD4B5E8A"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "60CCD17EF9446846"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_hazard_block"
+				}
+			]
+		}
+		{
+			title: "16x Copper Shingles"
+			icon: "create:copper_shingles"
+			disable_toast: true
+			x: 0.5d
+			y: 18.5d
+			shape: "hexagon"
+			subtitle: "3 Silver"
+			can_repeat: true
+			id: "1A2E4E06037E009A"
+			tasks: [{
+				id: "3ADD4B2667FCE6BD"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "26925EEB466FCEBD"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_copper_shingles"
+				}
+			]
+		}
+		{
+			title: "32x Algal Bricks"
+			icon: "architects_palette:algal_bricks"
+			disable_toast: true
+			x: 1.5d
+			y: 18.5d
+			shape: "hexagon"
+			subtitle: "6 Silver"
+			can_repeat: true
+			id: "011F64B48766234B"
+			tasks: [{
+				id: "1949FB8AB7C640DA"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "72F40F26027377A2"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_algal_bricks"
+				}
+			]
+		}
+		{
+			title: "32x Olivestone Bricks"
+			icon: "architects_palette:olivestone_bricks"
+			disable_toast: true
+			x: 2.5d
+			y: 18.5d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "2C9012E65F43EC72"
+			tasks: [{
+				id: "78C2B9BFB8F7AE79"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "4F7BF38D3490B8C2"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_olivestone_bricks"
+				}
+			]
+		}
+		{
+			title: "32x Darker Depth's Limestone"
+			icon: "darkerdepths:limestone"
+			disable_toast: true
+			x: 3.5d
+			y: 18.5d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "0A32C5B097AA4F14"
+			tasks: [{
+				id: "247CD1CF9FA09A54"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "16B4A7C6E87E2E0C"
+					type: "item"
+					auto: "enabled"
+					item: "darkerdepths:limestone"
+				}
+			]
+		}
+		{
+			title: "32x Sunmetal"
+			icon: "architects_palette:sunmetal_block"
+			disable_toast: true
+			x: -3.5d
+			y: 19.5d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "4202EDD798183934"
+			tasks: [{
+				id: "27C97FE708B72325"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "32A8DF7DE9B0A29A"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_sunmetal"
+				}
+			]
+		}
+		{
+			title: "32x Plating Block"
+			icon: "architects_palette:plating_block"
+			disable_toast: true
+			x: -2.5d
+			y: 19.5d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "3D7AD3AF3857F7D9"
+			tasks: [{
+				id: "30362DDA0FA170B1"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "72E68D6D7A7E8F25"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_plating_block"
+				}
+			]
+		}
+		{
+			title: "32x Twisted Planks"
+			icon: "architects_palette:twisted_planks"
+			disable_toast: true
+			x: -1.5d
+			y: 19.5d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "1D4B76A3C724C40D"
+			tasks: [{
+				id: "7566051D44BDCB05"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "22523CAC4C6C6970"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_twisted_planks"
+				}
+			]
+		}
+		{
+			title: "32x Osseous Bricks"
+			icon: "architects_palette:osseous_bricks"
+			disable_toast: true
+			x: -0.5d
+			y: 19.5d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "01428232944D8BE9"
+			tasks: [{
+				id: "29EBA4358AFF2C00"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "1E7F2B3B05EA97E2"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_osseous_bricks"
+				}
+			]
+		}
+		{
+			title: "16x Seared Stone"
+			icon: "tconstruct:seared_stone"
+			disable_toast: true
+			x: 0.5d
+			y: 19.5d
+			shape: "hexagon"
+			subtitle: "32 Silver"
+			can_repeat: true
+			id: "3A7A2C8D56500426"
+			tasks: [{
+				id: "0E882521462F6DD5"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "50F49365A310C7AF"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_seared_stone"
+				}
+			]
+		}
+		{
+			title: "16x Scorched Stone"
+			icon: "tconstruct:scorched_stone"
+			disable_toast: true
+			x: 1.5d
+			y: 19.5d
+			shape: "hexagon"
+			subtitle: "32 Silver"
+			can_repeat: true
+			id: "70EBB5E32545ACEC"
+			tasks: [{
+				id: "32D4F20220FEF18B"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2212B9D7C3CE5596"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_scorched_stone"
+				}
+			]
+		}
+		{
+			title: "1x Lantern"
+			icon: "minecraft:lantern"
+			disable_toast: true
+			x: 2.5d
+			y: 19.5d
+			shape: "hexagon"
+			subtitle: "1 Silver"
+			can_repeat: true
+			id: "10D5B3EF6A77B918"
+			tasks: [{
+				id: "630B8174C195B580"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2D46F83411D1BE3E"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_lantern"
+				}
+			]
+		}
+		{
+			title: "1x Copper Lantern"
+			icon: "supplementaries:copper_lantern"
+			disable_toast: true
+			x: 3.5d
+			y: 19.5d
+			shape: "hexagon"
+			subtitle: "1 Silver"
+			can_repeat: true
+			id: "6BC9B96B2C6684DC"
+			tasks: [{
+				id: "6E441EDE63DA1C1E"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "7902C2C3CA649D96"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_copper_lantern"
+				}
+			]
+		}
+		{
+			title: "1x Brass Lantern"
+			icon: "supplementaries:brass_lantern"
+			disable_toast: true
+			x: -3.5d
+			y: 20.5d
+			shape: "hexagon"
+			subtitle: "1 Silver"
+			can_repeat: true
+			id: "44CDD45033A93614"
+			tasks: [{
+				id: "1F6B1DD8809CA135"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "45FEF3A32F7766AD"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_brass_lantern"
+				}
+			]
+		}
+		{
+			title: "1x Crimson Lantern"
+			icon: "supplementaries:crimson_lantern"
+			disable_toast: true
+			x: -2.5d
+			y: 20.5d
+			shape: "hexagon"
+			subtitle: "1 Silver"
+			can_repeat: true
+			id: "7B7A161B4BAB89AD"
+			tasks: [{
+				id: "00217BF472607D30"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2E705AE0E825C6B5"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_crimson_lantern"
+				}
+			]
+		}
+		{
+			title: "4x Slime Ball"
+			icon: "minecraft:slime_ball"
+			disable_toast: true
+			x: -3.5d
+			y: 22.0d
+			shape: "hexagon"
+			subtitle: "24 Silver"
+			can_repeat: true
+			id: "522D9970B8C43046"
+			tasks: [{
+				id: "185E704F9052555F"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "576ECF50EAF96452"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_slime_ball"
+				}
+			]
+		}
+		{
+			title: "4x String"
+			icon: "minecraft:string"
+			disable_toast: true
+			x: -2.5d
+			y: 22.0d
+			shape: "hexagon"
+			subtitle: "5 Silver"
+			can_repeat: true
+			id: "11B239EF3DAE4463"
+			tasks: [{
+				id: "77AD501F9C60CC9E"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "7B223CF62CA3E5E3"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_string"
+				}
+			]
+		}
+		{
+			title: "4x Feather"
+			icon: "minecraft:feather"
+			disable_toast: true
+			x: -1.5d
+			y: 22.0d
+			shape: "hexagon"
+			subtitle: "6 Silver"
+			can_repeat: true
+			id: "339BC75AD23B70D7"
+			tasks: [{
+				id: "68258EE641051453"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "1522E7E6CC270122"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_feather"
+				}
+			]
+		}
+		{
+			title: "4x Gunpowder"
+			icon: "minecraft:gunpowder"
+			disable_toast: true
+			x: -0.5d
+			y: 22.0d
+			shape: "hexagon"
+			subtitle: "7 Silver"
+			can_repeat: true
+			id: "52CCFCE2733F76BC"
+			tasks: [{
+				id: "1A41C3FF29DFB7E6"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2A5CE406A8184B62"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_gunpowder"
+				}
+			]
+		}
+		{
+			title: "4x Leather"
+			icon: "minecraft:leather"
+			disable_toast: true
+			x: 0.5d
+			y: 22.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "42F951B44FB2BFE3"
+			tasks: [{
+				id: "2C76AAB77678430B"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "74F3E9B2AFC611AE"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_leather"
+				}
+			]
+		}
+		{
+			title: "4x Ink Sac"
+			icon: "minecraft:ink_sac"
+			disable_toast: true
+			x: 1.5d
+			y: 22.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "108550230A95C7D4"
+			tasks: [{
+				id: "59DFBA0B3B34FFE9"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "505F6AE0E7831D5A"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_ink_sac"
+				}
+			]
+		}
+		{
+			title: "1x Experience"
+			icon: "minecraft:experience_bottle"
+			disable_toast: true
+			x: 2.5d
+			y: 22.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "1BF763E3FD8C2245"
+			tasks: [{
+				id: "5C3649EA4045CFA5"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "4C973FACE23E9458"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_experience"
+				}
+			]
+		}
+		{
+			title: "1x Shulker Shell"
+			icon: "minecraft:shulker_shell"
+			disable_toast: true
+			x: 3.5d
+			y: 22.0d
+			shape: "hexagon"
+			subtitle: "2 Gold"
+			can_repeat: true
+			id: "1F05704C3B1FA528"
+			tasks: [{
+				id: "22B9CA1C44CE07C9"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "303058DFD6FFB21A"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_shulker_shell"
+				}
+			]
+		}
+		{
+			title: "4x Spider Eye"
+			icon: "minecraft:spider_eye"
+			disable_toast: true
+			x: -3.5d
+			y: 23.0d
+			shape: "hexagon"
+			subtitle: "10 Silver"
+			can_repeat: true
+			id: "0C6B2EEE280F7667"
+			tasks: [{
+				id: "244AD24E7FF79516"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "27371A9101CF9D19"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_spider_eye"
+				}
+			]
+		}
+		{
+			title: "1x Ender Pearl"
+			icon: "minecraft:ender_pearl"
+			disable_toast: true
+			x: -2.5d
+			y: 23.0d
+			shape: "hexagon"
+			subtitle: "48 Silver"
+			can_repeat: true
+			id: "46F150CC9BE2D856"
+			tasks: [{
+				id: "69CC6A53FB1DA522"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "1F0E6C70D37E2509"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_ender_pearl"
+				}
+			]
+		}
+		{
+			title: "4x Rotten Flesh"
+			icon: "minecraft:rotten_flesh"
+			disable_toast: true
+			x: -1.5d
+			y: 23.0d
+			shape: "hexagon"
+			subtitle: "3 Silver"
+			can_repeat: true
+			id: "76287BDB2E9B7BC8"
+			tasks: [{
+				id: "2AB8F75131B22386"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "7C5CB53B93CA20F6"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_rotten_flesh"
+				}
+			]
+		}
+		{
+			title: "1x Blaze Rod"
+			icon: "minecraft:blaze_rod"
+			disable_toast: true
+			x: -0.5d
+			y: 23.0d
+			shape: "hexagon"
+			subtitle: "20 Silver"
+			can_repeat: true
+			id: "685DD2A4DFF56193"
+			tasks: [{
+				id: "69AE01C37B987F2B"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "17E28B4A42E7977B"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_blaze_rod"
+				}
+			]
+		}
+		{
+			title: "4x Bone"
+			icon: "minecraft:bone"
+			disable_toast: true
+			x: 0.5d
+			y: 23.0d
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			can_repeat: true
+			id: "433E103CD81712C1"
+			tasks: [{
+				id: "48D9E5B847C5F29A"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "3AE918FEFE0A3CB9"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_bone"
+				}
+			]
+		}
+		{
+			title: "4x Prismarine Shard"
+			icon: "minecraft:prismarine_shard"
+			disable_toast: true
+			x: 1.5d
+			y: 23.0d
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			can_repeat: true
+			id: "29696B4965010CED"
+			tasks: [{
+				id: "368A7CCA6ACF29AA"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2D8C5A5E22AB7A9A"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_prismarine_shard"
+				}
+			]
+		}
+		{
+			title: "4x Prismarine Crystals"
+			icon: "minecraft:prismarine_crystals"
+			disable_toast: true
+			x: 2.5d
+			y: 23.0d
+			shape: "hexagon"
+			subtitle: "24 Silver"
+			can_repeat: true
+			id: "7C7B81ABFC586379"
+			tasks: [{
+				id: "18A713A7F617EE48"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "77F93921DB94E45A"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_prismarine_crystals"
+				}
+			]
+		}
+		{
+			title: "1x Witch Hat"
+			icon: "reliquary:witch_hat"
+			disable_toast: true
+			x: 3.5d
+			y: 23.0d
+			shape: "hexagon"
+			subtitle: "1 Gold"
+			can_repeat: true
+			id: "4864E6BA6AE2B49B"
+			tasks: [{
+				id: "34280C5D1DE0A3D8"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "3BFE36CE8DEED04B"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_witch_hat"
+				}
+			]
+		}
+		{
+			title: "1x Zombie heart"
+			icon: "reliquary:zombie_heart"
+			disable_toast: true
+			x: -3.5d
+			y: 24.0d
+			shape: "hexagon"
+			subtitle: "32 Silver"
+			can_repeat: true
+			id: "2714FE0125D3E953"
+			tasks: [{
+				id: "531D4A7E38CB4119"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2683AEBC65309590"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_zombie_heart"
+				}
+			]
+		}
+		{
+			title: "1x Squid Beak"
+			icon: "reliquary:squid_beak"
+			disable_toast: true
+			x: -2.5d
+			y: 24.0d
+			shape: "hexagon"
+			subtitle: "32 Silver"
+			can_repeat: true
+			id: "395978A711E14931"
+			tasks: [{
+				id: "6FD1B29245B5DA4D"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "08D7DF6BC677E813"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_squid_beak"
+				}
+			]
+		}
+		{
+			title: "1x Rib Bone"
+			icon: "reliquary:rib_bone"
+			disable_toast: true
+			x: -1.5d
+			y: 24.0d
+			shape: "hexagon"
+			subtitle: "32 Silver"
+			can_repeat: true
+			id: "23F9DB562ED7C2F6"
+			tasks: [{
+				id: "7F553FF9F6C2E75F"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "5B6DB6D9D5226D0E"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_rib_bone"
+				}
+			]
+		}
+		{
+			title: "1x Catalyzing Gland"
+			icon: "reliquary:catalyzing_gland"
+			disable_toast: true
+			x: -0.5d
+			y: 24.0d
+			shape: "hexagon"
+			subtitle: "48 Silver"
+			can_repeat: true
+			id: "4764EAB921EE1F19"
+			tasks: [{
+				id: "251E8472CFA98D68"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "3045E27533693F14"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_catalyzing_gland"
+				}
+			]
+		}
+		{
+			title: "1x Chelicerae"
+			icon: "reliquary:chelicerae"
+			disable_toast: true
+			x: 0.5d
+			y: 24.0d
+			shape: "hexagon"
+			subtitle: "32 Silver"
+			can_repeat: true
+			id: "2E10D7FE1BC4FDBB"
+			tasks: [{
+				id: "168C97990B35982C"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "4F8FF287C3AC4EB4"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_chelicerae"
+				}
+			]
+		}
+		{
+			title: "1x Slime Pearl"
+			icon: "reliquary:slime_pearl"
+			disable_toast: true
+			x: 1.5d
+			y: 24.0d
+			shape: "hexagon"
+			subtitle: "48 Silver"
+			can_repeat: true
+			id: "67B45D6767F8BFD9"
+			tasks: [{
+				id: "4018899FC3C2DC63"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "3DD074848EA13D6A"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_slime_pearl"
+				}
+			]
+		}
+		{
+			title: "1x Bat Wing"
+			icon: "reliquary:bat_wing"
+			disable_toast: true
+			x: 2.5d
+			y: 24.0d
+			shape: "hexagon"
+			subtitle: "2 Gold"
+			can_repeat: true
+			id: "5491C5600D7F039A"
+			tasks: [{
+				id: "123CD29AA111F555"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "1F9F748792E58E29"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_bat_wing"
+				}
+			]
+		}
+		{
+			title: "1x Withered Rib"
+			icon: "reliquary:withered_rib"
+			disable_toast: true
+			x: 3.5d
+			y: 24.0d
+			shape: "hexagon"
+			subtitle: "2 Gold"
+			can_repeat: true
+			id: "4BD2016AFC2A2035"
+			tasks: [{
+				id: "50C8AD8844CB79E2"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "1DF2FEEF65D1FE87"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_withered_rib"
+				}
+			]
+		}
+		{
+			title: "1x Molten Core"
+			icon: "reliquary:molten_core"
+			disable_toast: true
+			x: -3.5d
+			y: 25.0d
+			shape: "hexagon"
+			subtitle: "48 Silver"
+			can_repeat: true
+			id: "59474208A27099BF"
+			tasks: [{
+				id: "1231C00010314495"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "716125125B3BC02C"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_molten_core"
+				}
+			]
+		}
+		{
+			title: "1x Eye of the Storm"
+			icon: "reliquary:eye_of_the_storm"
+			disable_toast: true
+			x: -2.5d
+			y: 25.0d
+			shape: "hexagon"
+			subtitle: "2 Gold"
+			can_repeat: true
+			id: "6FF65841E3EA0FCD"
+			tasks: [{
+				id: "706BA898C03C50DE"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "70F1845989BF7E3D"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_eye_of_the_storm"
+				}
+			]
+		}
+		{
+			title: "1x Frozen Core"
+			icon: "reliquary:frozen_core"
+			disable_toast: true
+			x: -1.5d
+			y: 25.0d
+			shape: "hexagon"
+			subtitle: "48 Silver"
+			can_repeat: true
+			id: "0CF82AABD5E05A0D"
+			tasks: [{
+				id: "3AE6EC858CA6F1C3"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "4AA8F100108F0558"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_frozen_core"
+				}
+			]
+		}
+		{
+			title: "1x Nebulous Heart"
+			icon: "reliquary:nebulous_heart"
+			disable_toast: true
+			x: -0.5d
+			y: 25.0d
+			shape: "hexagon"
+			subtitle: "1 Gold"
+			can_repeat: true
+			id: "73EEAE66CC2014E9"
+			tasks: [{
+				id: "6471BE62CD7C0291"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "327EA87B6F1EB3B3"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_nebulous_heart"
+				}
+			]
+		}
+		{
+			title: "1x Guardian Spike"
+			icon: "reliquary:guardian_spike"
+			disable_toast: true
+			x: 0.5d
+			y: 25.0d
+			shape: "hexagon"
+			subtitle: "1 Gold"
+			can_repeat: true
+			id: "662583DB97721FE8"
+			tasks: [{
+				id: "58AA6D53BCBDE592"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "138ED529F3D10981"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_guardian_spike"
+				}
+			]
+		}
+		{
+			title: "1x Phantom Membrane"
+			icon: "minecraft:phantom_membrane"
+			disable_toast: true
+			x: 1.5d
+			y: 25.0d
+			shape: "hexagon"
+			subtitle: "48 Silver"
+			can_repeat: true
+			id: "210A3F8C44AAD89A"
+			tasks: [{
+				id: "2E1F7F34C7142CAA"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "00ECC786C2F2BD74"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_phantom_membrane"
+				}
+			]
+		}
+		{
+			title: "1x Blaze Cake"
+			icon: "create:blaze_cake"
+			disable_toast: true
+			x: 2.5d
+			y: 25.0d
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			can_repeat: true
+			id: "3CEC6538990D89C3"
+			tasks: [{
+				id: "13988AB128C86240"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 10b }
+				item: "thermal:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "2523CFB9FE014C2B"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_blaze_cake"
+				}
+			]
+		}
+		{
+			title: "Early Shipping"
+			icon: "thermal:machine_press"
+			x: -2.0d
+			y: 12.25d
+			shape: "circle"
+			subtitle: "30 Silver"
+			description: [
+				"Getting to the Brass Age is hard work!"
+				""
+				"The avid salesman can come here for purchasing Trading Machines from the get go. This should help you take off!"
+			]
+			dependencies: ["6AC1CED0D341150E"]
+			can_repeat: true
+			id: "4DFE4FD3B504AF4B"
+			tasks: [{
+				id: "3E2EAC7B2D274669"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 30b }
+				item: "thermal:silver_coin"
+				count: 30L
+			}]
+			rewards: [
+				{
+					id: "26C6A3ACA1B59772"
+					type: "item"
+					auto: "enabled"
+					item: "thermal:machine_press"
+				}
+				{
+					id: "271E7F49C6719B0B"
+					type: "item"
+					auto: "no_toast"
+					item: "thermal:dynamo_stirling"
+				}
+			]
+		}
+		{
+			title: "16x Tuff"
+			icon: "minecraft:tuff"
+			x: -1.5d
+			y: 2.0d
+			shape: "hexagon"
+			subtitle: "32 Silver"
+			hide: true
+			can_repeat: true
+			id: "3078948B61074451"
+			tasks: [{
+				id: "594225F0028D1F90"
+				type: "item"
+				item: "thermal:silver_coin"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "39B730AD1B44CF83"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_tuff"
+				}
+			]
+		}
+		{
+			title: "16x Deepslate"
+			icon: "minecraft:deepslate"
+			x: -0.5d
+			y: 2.0d
+			shape: "hexagon"
+			subtitle: "12 Silver"
+			can_repeat: true
+			id: "34DCD0428FE52E01"
+			tasks: [{
+				id: "6E453246767F1D94"
+				type: "item"
+				item: "thermal:silver_coin"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "70BEBA0681149248"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_deepslate"
+				}
+			]
+		}
+		{
+			title: "16x Dripstone Block"
+			icon: "minecraft:dripstone_block"
+			x: 0.5d
+			y: 2.0d
+			shape: "hexagon"
+			subtitle: "32 Silver"
+			can_repeat: true
+			id: "6FE90308373455CF"
+			tasks: [{
+				id: "06FA7D6C6A87FA50"
+				type: "item"
+				icon: "thermal:silver_coin"
+				item: "thermal:silver_coin"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "5324A93EB4C89FDB"
+					type: "item"
+					auto: "enabled"
+					item: "kubejs:trade_card_dripstone_block"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}
