@@ -1,4 +1,7 @@
-# Above-and-Beyond
-[Forge Modpack] Create's official Challenge-pack  
+# Above-and-Beyond Remaster
 
-More information on the Project Page: https://www.curseforge.com/minecraft/modpacks/create-above-and-beyond
+WIP Project
+
+# Install
+Download profile zip and import in your curseforge app.
+
